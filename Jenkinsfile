@@ -37,7 +37,7 @@ pipeline {
             allure includeProperties: false,
                    jdk: '',
                    results: [[path: 'target/allure-results']],
-                   commandline: 'Allure 2.x'
+                   commandline: 'Allure 2.36.0'
 
             // Arhivare Log-uri
             archiveArtifacts artifacts: 'logs/**/*.log', allowEmptyArchive: true
