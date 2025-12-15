@@ -3,9 +3,9 @@ name: HapifyMe Automated Tests
 # Când să ruleze robotul?
 on:
   push:
-    branches: [ "master" ] # La fiecare push pe master
+    branches: [ "main" ] # La fiecare push pe master
   pull_request:
-    branches: [ "master" ] # La fiecare Pull Request
+    branches: [ "main" ] # La fiecare Pull Request
 
 jobs:
   test-execution:
