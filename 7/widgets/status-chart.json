@@ -1,0 +1,1 @@
+[{"uid":"41a983dc46cf15f0","name":"Validare Login API cu user corect","time":{"start":1765790672800,"stop":1765790676176,"duration":3376},"status":"failed","severity":"blocker"},{"uid":"ce2b5487f5153d64","name":"testLoginWithLog4j","time":{"start":1765790676195,"stop":1765790676808,"duration":613},"status":"passed","severity":"normal"}]
