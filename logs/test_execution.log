@@ -1,0 +1,14 @@
+2025-12-15 08:27:46 INFO  BaseTest:14 - ========================================
+2025-12-15 08:27:46 INFO  BaseTest:15 - Începere Test: testValidLogin
+2025-12-15 08:27:46 INFO  BaseTest:16 - Base URL setat la: [https://test.hapifyme.com](https://test.hapifyme.com)
+2025-12-15 08:27:46 INFO  BaseTest:17 - ========================================
+2025-12-15 08:27:46 INFO  BaseTest:39 - Se execută pasul Allure: performLogin
+2025-12-15 08:27:49 INFO  BaseTest:65 - Timpul de răspuns a fost: 1690 ms
+2025-12-15 08:27:50 INFO  BaseTest:59 - Validare reușită. Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJoYXBpZnlNZSIsImF1ZCI6ImhhcGlmeU1lVXNlciIsImlhdCI6MTc2NTc4MDA2OSwiZXhwIjoxNzY1NzgzNjY5LCJ1c2VyX2lkIjoiMTkzNzMiLCJ1c2VybmFtZSI6ImpvaG4xNzY1NjU0ODg5MjQ3X2RvZTE3NjU2NTQ4ODkyNDcifQ.vdf5oksM6vjaqyTU8XMKlL2psDhEazUlw2XCmMBsWGc
+2025-12-15 08:27:50 INFO  BaseTest:14 - ========================================
+2025-12-15 08:27:50 INFO  BaseTest:15 - Începere Test: testLoginWithLog4j
+2025-12-15 08:27:50 INFO  BaseTest:16 - Base URL setat la: [https://test.hapifyme.com](https://test.hapifyme.com)
+2025-12-15 08:27:50 INFO  BaseTest:17 - ========================================
+2025-12-15 08:27:50 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
+2025-12-15 08:27:50 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 200
+2025-12-15 08:27:50 INFO  BaseTest:28 - Login reușit. Token extras.
