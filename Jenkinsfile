@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         // Folosim numele definite in 'Global Tool Configuration'
-        maven 'Maven 3.8.9'
+        maven 'Maven 3.8.x'
         jdk 'JDK 21' // Rezolvă eroarea 'invalid target release: 21'
     }
 
@@ -37,7 +37,7 @@ pipeline {
             allure includeProperties: false,
                    jdk: '',
                    results: [[path: 'target/allure-results']],
-                   commandline: 'Allure 2.36.0'
+                   commandline: 'Allure 2.x'
 
             // Arhivare Log-uri
             archiveArtifacts artifacts: 'logs/**/*.log', allowEmptyArchive: true
