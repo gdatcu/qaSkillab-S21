@@ -1,16 +1,14 @@
 pipeline {
-    agent any // Rulează pe orice agent disponibil
+    agent any
 
     tools {
-        // Numele configurate la Pasul 4 de mai sus
         maven 'Maven 3.8.9'
+        jdk 'JDK 21' // <--- AICI trebuie să fie numele pus la pasul 1 (Tools)
     }
 
     stages {
         stage('Checkout') {
             steps {
-                // Descarcă codul din Git (înlocuiește cu URL-ul tău)
-                // Dacă e repo privat, va trebui să configurezi Credentials în Jenkins
                 git branch: 'main', url: 'https://github.com/gdatcu/qaSkillab-S21.git'
             }
         }
@@ -18,7 +16,6 @@ pipeline {
         stage('Build & Test') {
             steps {
                 script {
-                    // Rulează testele și ignoră erorile temporar pentru a ajunge la raportare
                     if (isUnix()) {
                         sh 'mvn clean test -Dmaven.test.failure.ignore=true'
                     } else {
@@ -31,18 +28,12 @@ pipeline {
 
     post {
         always {
-            // 1. Generare Raport Allure
-            // Necesită plugin-ul Allure instalat și configurat în Tools
+            // Această comandă va funcționa doar după instalarea plugin-ului
             allure includeProperties: false,
                    jdk: '',
                    results: [[path: 'target/allure-results']]
 
-            // 2. Arhivare Log-uri Log4j
-            // Păstrează fișierele .log ca artefacte descărcabile
             archiveArtifacts artifacts: 'logs/**/*.log', allowEmptyArchive: true
-        }
-        failure {
-            echo 'ATENȚIE: Testele hapifyMe au picat!'
         }
     }
 }
