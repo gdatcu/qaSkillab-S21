@@ -1,4 +1,4 @@
-name: HapifyMe Automated Tests
+name: hapifyMe Automated Tests
 
 # Când să ruleze robotul?
 on:
