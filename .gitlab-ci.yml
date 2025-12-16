@@ -20,11 +20,9 @@ run_tests:
   script:
     - echo "Rulare teste HapifyMe cu Java 21..."
     - java -version
-    - echo "Executam testele ignorand erorile pentru a genera raportul..."
-    - mvn clean test -Dmaven.test.failure.ignore=true
-    - echo "=== DEBUG: Verificare folder allure-results ==="
-    # Folosim ghilimele simple pentru a evita interpretarea gresita a caracterelor speciale in YAML
-    - 'ls -la target/allure-results || echo "AVERTISMENT: Folderul target/allure-results NU exista!"'
+    # Fortam directorul de rezultate pentru a fi siguri ca exista
+    - mvn clean test -Dmaven.test.failure.ignore=true -Dallure.results.directory=target/allure-results
+    - ls -la target/allure-results
   allow_failure: true
   artifacts:
     when: always
@@ -39,11 +37,8 @@ pages:
   tags:
     - qagitlab
   script:
-    - echo "=== DEBUG: Verificare artefacte primite de la run_tests ==="
-    - 'ls -la target/allure-results || echo "EROARE: Artefactele nu au ajuns in acest job!"'
     - mkdir public
     - apt-get update && apt-get install -y wget unzip
-    # Link corect, fara markdown
     - wget https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.zip
     - unzip allure-2.24.0.zip -d /opt/
     - /opt/allure-2.24.0/bin/allure generate target/allure-results -o public
