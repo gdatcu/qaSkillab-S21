@@ -29,5 +29,7 @@ public class LoginTest extends BaseTest {
         }
 
         Assert.assertEquals(response.getStatusCode(), 200);
+        logger.info("Login Test finalizat cu succes pe thread-ul: " + Thread.currentThread().getId());
+
     }
 }

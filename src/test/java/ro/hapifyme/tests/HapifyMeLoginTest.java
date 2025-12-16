@@ -69,6 +69,8 @@ public class HapifyMeLoginTest extends BaseTest {
 
         Assert.assertTrue(timeInMs < 2000,
                 "Performanță slabă! Timpul de răspuns (" + timeInMs + "ms) a depășit limita de 2000ms.");
+
+        logger.info("hapifyMe Login Test finalizat cu succes pe thread-ul: " + Thread.currentThread().getId());
     }
 
     // Metodă ajutătoare pentru a atașa text (JSON, Logs) în raportul Allure
