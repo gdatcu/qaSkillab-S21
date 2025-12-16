@@ -16,18 +16,11 @@ stages:
 run_tests:
   stage: test
   tags:
-    - qagitlab
+    - qagitlab  # <--- CRITIC: Spunem job-ului să caute un runner cu acest tag
   script:
     - echo "Rulare teste HapifyMe cu Java 21..."
     - java -version
     - mvn clean test
-
-    # --- DEBUGGING START ---
-    - echo "=== DEBUG: Verificare folder allure-results ==="
-    # Listăm fișierele generate. Dacă e gol, Allure Report va fi gol.
-    - ls -la target/allure-results || echo "AVERTISMENT: Folderul target/allure-results NU există!"
-    # --- DEBUGGING END ---
-
   allow_failure: true
   artifacts:
     when: always
@@ -40,14 +33,10 @@ run_tests:
 pages:
   stage: report
   tags:
-    - qagitlab
+    - qagitlab  # <--- CRITIC: Și acest job trebuie să ruleze pe runner-ul tău
   script:
-    # --- DEBUGGING START ---
-    - echo "=== DEBUG: Verificare artefacte primite de la run_tests ==="
-    - ls -la target/allure-results || echo "EROARE: Artefactele nu au ajuns în acest job!"
-    # --- DEBUGGING END ---
-
     - mkdir public
+    # Instalare Allure manual (imaginea maven nu il are)
     - apt-get update && apt-get install -y wget unzip
     - wget https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.zip
     - unzip allure-2.24.0.zip -d /opt/
