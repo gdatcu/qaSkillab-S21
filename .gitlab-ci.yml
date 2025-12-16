@@ -47,7 +47,6 @@ pages:
 
     - mkdir public
     - apt-get update && apt-get install -y wget unzip
-    # Link curat (fara markdown)
     - wget https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.zip
     - unzip allure-2.24.0.zip -d /opt/
 
