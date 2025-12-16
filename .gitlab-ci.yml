@@ -20,13 +20,11 @@ run_tests:
   script:
     - echo "Rulare teste HapifyMe cu Java 21..."
     - java -version
-    # CHEIA SUCCESULUI: ignore failure
+    - echo "Executam testele ignorand erorile pentru a genera raportul..."
     - mvn clean test -Dmaven.test.failure.ignore=true
-    # DEBUGGING: Listare fisiere rezultate
     - echo "=== DEBUG: Verificare folder allure-results ==="
     - ls -la target/allure-results || echo "AVERTISMENT: Folderul target/allure-results NU există!"
-
-  # Salvăm rezultatele pentru următorul job
+  allow_failure: true
   artifacts:
     when: always
     paths:
@@ -40,12 +38,9 @@ pages:
   tags:
     - qagitlab
   script:
-    # DEBUGGING: Verificare artefacte primite
     - echo "=== DEBUG: Verificare artefacte primite de la run_tests ==="
     - ls -la target/allure-results || echo "EROARE: Artefactele nu au ajuns în acest job!"
-
     - mkdir public
-    # Instalare Allure manual
     - apt-get update && apt-get install -y wget unzip
     - wget https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.zip
     - unzip allure-2.24.0.zip -d /opt/
