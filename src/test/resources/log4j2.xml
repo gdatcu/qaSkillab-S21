@@ -8,14 +8,14 @@
         </Console>
 
         <!-- Configurare pentru Fișier (ce rămâne salvat) -->
-        <File name="File" fileName="logs/test_execution.log" append="false">
+        <File name="File" fileName="logs/test_execution.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
         </File>
     </Appenders>
 
     <Loggers>
         <!-- Setăm nivelul global la INFO (DEBUG și TRACE vor fi ignorate) -->
-        <Root level="info">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Root>

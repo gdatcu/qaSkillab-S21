@@ -1,29 +1,98 @@
-2025-12-16 13:09:44 INFO  BaseTest:17 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:17 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:17 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:17 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:18 - Începere Test: testValidLogin
-2025-12-16 13:09:44 INFO  BaseTest:18 - Începere Test: testSystemHealth
-2025-12-16 13:09:44 INFO  BaseTest:18 - Începere Test: testUserFlow
-2025-12-16 13:09:44 INFO  BaseTest:18 - Începere Test: testLoginWithLog4j
-2025-12-16 13:09:44 INFO  BaseTest:20 - Running on Thread ID: 53
-2025-12-16 13:09:44 INFO  BaseTest:20 - Running on Thread ID: 54
-2025-12-16 13:09:44 INFO  BaseTest:20 - Running on Thread ID: 51
-2025-12-16 13:09:44 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
-2025-12-16 13:09:44 INFO  BaseTest:20 - Running on Thread ID: 52
-2025-12-16 13:09:44 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
-2025-12-16 13:09:44 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
-2025-12-16 13:09:44 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
-2025-12-16 13:09:44 INFO  BaseTest:22 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:22 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:22 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:22 - ========================================
-2025-12-16 13:09:44 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
-2025-12-16 13:09:44 INFO  BaseTest:39 - Se execută pasul Allure: performLogin
-2025-12-16 13:09:47 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 200
-2025-12-16 13:09:47 INFO  BaseTest:28 - Login reușit. Token extras.
-2025-12-16 13:09:47 INFO  BaseTest:32 - Login Test finalizat cu succes pe thread-ul: 51
-2025-12-16 13:09:47 INFO  BaseTest:65 - Timpul de răspuns a fost: 1805 ms
-2025-12-16 13:09:47 INFO  BaseTest:73 - hapifyMe Login Test finalizat cu succes pe thread-ul: 54
-2025-12-16 13:09:48 INFO  BaseTest:59 - Validare reușită. Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJoYXBpZnlNZSIsImF1ZCI6ImhhcGlmeU1lVXNlciIsImlhdCI6MTc2NTg4MzM4NiwiZXhwIjoxNzY1ODg2OTg2LCJ1c2VyX2lkIjoiMTkzNzMiLCJ1c2VybmFtZSI6ImpvaG4xNzY1NjU0ODg5MjQ3X2RvZTE3NjU2NTQ4ODkyNDcifQ.i-1iI7CHZldcstZWrBao25NFhadNpLvP3bCtLoaWTgM
-2025-12-16 13:09:50 INFO  BaseTest:35 - System Health Check finalizat cu succes pe thread-ul: 52
+2025-12-17 19:46:31 INFO  BaseTest:17 - ========================================
+2025-12-17 19:46:31 INFO  BaseTest:18 - Începere Test: testLoginWithLog4j
+2025-12-17 19:46:31 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 19:46:31 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 19:46:31 INFO  BaseTest:22 - ========================================
+2025-12-17 19:46:31 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
+2025-12-17 19:46:31 DEBUG BaseTest:16 - Payload trimis: {"username": "john1765654889247_doe1765654889247", "password": "5Wp}px<8xUyS_"}
+2025-12-17 19:46:35 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 401
+2025-12-17 19:46:35 ERROR BaseTest:26 - Login eșuat! Body răspuns: {"status":"error","message":"Invalid username or password"}
+2025-12-17 19:46:36 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 19:48:41 INFO  BaseTest:17 - ========================================
+2025-12-17 19:48:41 INFO  BaseTest:18 - Începere Test: testLoginWithLog4j
+2025-12-17 19:48:41 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 19:48:41 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 19:48:41 INFO  BaseTest:22 - ========================================
+2025-12-17 19:48:41 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
+2025-12-17 19:48:41 DEBUG BaseTest:16 - Payload trimis: {"username": "john1765654889247_doe1765654889247", "password": "5Wp}px<8xUyS"}
+2025-12-17 19:48:44 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 200
+2025-12-17 19:48:44 INFO  BaseTest:28 - Login reușit. Token extras.
+2025-12-17 19:48:44 INFO  BaseTest:32 - Login Test finalizat cu succes pe thread-ul: 1
+2025-12-17 19:48:44 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 19:49:46 INFO  BaseTest:17 - ========================================
+2025-12-17 19:49:46 INFO  BaseTest:18 - Începere Test: testLoginWithLog4j
+2025-12-17 19:49:46 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 19:49:46 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 19:49:46 INFO  BaseTest:22 - ========================================
+2025-12-17 19:49:46 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
+2025-12-17 19:49:46 DEBUG BaseTest:16 - Payload trimis: {"username": "john1765654889247_doe1765654889247", "password": "5Wp}px<8xUyS"}
+2025-12-17 19:49:48 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 200
+2025-12-17 19:49:48 INFO  BaseTest:28 - Login reușit. Token extras.
+2025-12-17 19:49:48 INFO  BaseTest:32 - Login Test finalizat cu succes pe thread-ul: 1
+2025-12-17 19:49:48 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:09:37 INFO  BaseTest:17 - ========================================
+2025-12-17 20:09:37 INFO  BaseTest:18 - Începere Test: testValidLogin
+2025-12-17 20:09:37 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:09:37 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:09:37 INFO  BaseTest:22 - ========================================
+2025-12-17 20:09:38 INFO  BaseTest:39 - Se execută pasul Allure: performLogin
+2025-12-17 20:09:45 INFO  BaseTest:65 - Timpul de răspuns a fost: 3186 ms
+2025-12-17 20:09:45 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:09:45 INFO  BaseTest:17 - ========================================
+2025-12-17 20:09:45 INFO  BaseTest:18 - Începere Test: testLoginWithLog4j
+2025-12-17 20:09:45 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:09:45 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:09:45 INFO  BaseTest:22 - ========================================
+2025-12-17 20:09:45 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
+2025-12-17 20:09:45 DEBUG BaseTest:16 - Payload trimis: {"username": "john1765654889247_doe1765654889247", "password": "5Wp}px<8xUyS"}
+2025-12-17 20:09:45 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 200
+2025-12-17 20:09:45 INFO  BaseTest:28 - Login reușit. Token extras.
+2025-12-17 20:09:45 INFO  BaseTest:32 - Login Test finalizat cu succes pe thread-ul: 1
+2025-12-17 20:09:45 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:09:45 INFO  BaseTest:17 - ========================================
+2025-12-17 20:09:45 INFO  BaseTest:18 - Începere Test: testSystemHealth
+2025-12-17 20:09:45 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:09:45 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:09:45 INFO  BaseTest:22 - ========================================
+2025-12-17 20:09:48 INFO  BaseTest:35 - System Health Check finalizat cu succes pe thread-ul: 1
+2025-12-17 20:09:48 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:09:48 INFO  BaseTest:17 - ========================================
+2025-12-17 20:09:48 INFO  BaseTest:18 - Începere Test: testUserFlow
+2025-12-17 20:09:48 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:09:48 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:09:48 INFO  BaseTest:22 - ========================================
+2025-12-17 20:09:48 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:15:11 INFO  BaseTest:17 - ========================================
+2025-12-17 20:15:11 INFO  BaseTest:18 - Începere Test: testValidLogin
+2025-12-17 20:15:11 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:15:11 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:15:11 INFO  BaseTest:22 - ========================================
+2025-12-17 20:15:12 INFO  BaseTest:39 - Se execută pasul Allure: performLogin
+2025-12-17 20:15:17 INFO  BaseTest:65 - Timpul de răspuns a fost: 1688 ms
+2025-12-17 20:15:17 INFO  BaseTest:73 - hapifyMe Login Test finalizat cu succes pe thread-ul: 1
+2025-12-17 20:15:17 INFO  BaseTest:59 - Validare reușită. Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJoYXBpZnlNZSIsImF1ZCI6ImhhcGlmeU1lVXNlciIsImlhdCI6MTc2NTk5NTMxNiwiZXhwIjoxNzY1OTk4OTE2LCJ1c2VyX2lkIjoiMTkzNzMiLCJ1c2VybmFtZSI6ImpvaG4xNzY1NjU0ODg5MjQ3X2RvZTE3NjU2NTQ4ODkyNDcifQ.-RLn3pmVKDU4OokMTXMKUh-Kqw6anEoggdqjVIcU2Gw
+2025-12-17 20:15:17 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:15:17 INFO  BaseTest:17 - ========================================
+2025-12-17 20:15:17 INFO  BaseTest:18 - Începere Test: testLoginWithLog4j
+2025-12-17 20:15:17 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:15:17 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:15:17 INFO  BaseTest:22 - ========================================
+2025-12-17 20:15:17 INFO  BaseTest:15 - Pas 1: Pregătire request către endpoint-ul: https://test.hapifyme.com/api/user/login.php
+2025-12-17 20:15:17 DEBUG BaseTest:16 - Payload trimis: {"username": "john1765654889247_doe1765654889247", "password": "5Wp}px<8xUyS"}
+2025-12-17 20:15:18 INFO  BaseTest:23 - Pas 2: Request trimis. Status primit: 200
+2025-12-17 20:15:18 INFO  BaseTest:28 - Login reușit. Token extras.
+2025-12-17 20:15:18 INFO  BaseTest:32 - Login Test finalizat cu succes pe thread-ul: 1
+2025-12-17 20:15:18 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:15:18 INFO  BaseTest:17 - ========================================
+2025-12-17 20:15:18 INFO  BaseTest:18 - Începere Test: testSystemHealth
+2025-12-17 20:15:18 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:15:18 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:15:18 INFO  BaseTest:22 - ========================================
+2025-12-17 20:15:20 INFO  BaseTest:35 - System Health Check finalizat cu succes pe thread-ul: 1
+2025-12-17 20:15:20 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
+2025-12-17 20:15:20 INFO  BaseTest:17 - ========================================
+2025-12-17 20:15:20 INFO  BaseTest:18 - Începere Test: testUserFlow
+2025-12-17 20:15:20 INFO  BaseTest:20 - Running on Thread ID: 1
+2025-12-17 20:15:20 INFO  BaseTest:21 - Base URL: https://test.hapifyme.com
+2025-12-17 20:15:20 INFO  BaseTest:22 - ========================================
+2025-12-17 20:15:20 DEBUG BaseTest:30 - Context curățat pentru Thread ID: 1
