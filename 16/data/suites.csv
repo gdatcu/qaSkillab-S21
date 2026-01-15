@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Acest test verifică endpoint-ul /api/user/login.php. Se așteaptă un token JWT în răspuns.","1165","Validare Login API cu user corect","Surefire suite","Thu Jan 15 18:20:13 UTC 2026","passed","Thu Jan 15 18:20:14 UTC 2026","ro.hapifyme.tests.HapifyMeLoginTest","Surefire test","ro.hapifyme.tests.HapifyMeLoginTest","testValidLogin"
+"","543","testLoginWithLog4j","Surefire suite","Thu Jan 15 18:20:16 UTC 2026","passed","Thu Jan 15 18:20:17 UTC 2026","ro.hapifyme.tests.LoginTest","Surefire test","ro.hapifyme.tests.LoginTest","testLoginWithLog4j"
+"","2563","Verifică starea de sănătate a sistemului (Health Check)","Surefire suite","Thu Jan 15 18:20:14 UTC 2026","passed","Thu Jan 15 18:20:16 UTC 2026","ro.hapifyme.tests.SystemHealthTest","Surefire test","ro.hapifyme.tests.SystemHealthTest","testSystemHealth"
+"","3616","testUserFlow","Surefire suite","Thu Jan 15 18:20:09 UTC 2026","passed","Thu Jan 15 18:20:13 UTC 2026","ro.hapifyme.tests.ThreadSafeTest","Surefire test","ro.hapifyme.tests.ThreadSafeTest","testUserFlow"
