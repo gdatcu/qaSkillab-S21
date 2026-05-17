@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="hapifyMe Suite" parallel="methods" thread-count="8">
+    <!-- parallel="methods": Fiecare @Test rulează separat -->
+    <!-- thread-count="8": 8 teste simultan (API-urile consumă puțin CPU local) -->
+    <listeners>
+        <!-- Conectăm logica de Retry la toată suita -->
+        <listener class-name="ro.hapifyme.utils.AnnotationTransformer"/>
+    </listeners>
+    <test name="Regression">
+        <packages>
+            <package name="ro.hapifyme.tests.*"/>
+        </packages>
+    </test>
+</suite>
