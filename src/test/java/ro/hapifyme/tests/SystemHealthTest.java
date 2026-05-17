@@ -13,7 +13,7 @@ public class SystemHealthTest extends BaseTest {
         String apiKey = "3ecace779eb54668082835ffd2e0e2db5389b4571a9973ec5adf894ff35486ab";
 
         given()
-                .baseUri("https://test.hapifyme.com/api")
+                .baseUri("https://apps.qualiadept.eu/hapifyme/api")
                 .header("Authorization", apiKey)
                 // Logăm doar dacă testul eșuează pentru a nu aglomera consola în execuția paralelă
                 .log().ifValidationFails()

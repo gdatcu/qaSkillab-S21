@@ -18,7 +18,7 @@ public class BaseTest {
         logger.info("Începere Test: " + method.getName());
         // Adăugăm ID-ul thread-ului pentru a putea depana execuția paralelă
         logger.info("Running on Thread ID: " + Thread.currentThread().getId());
-        logger.info("Base URL: https://test.hapifyme.com");
+        logger.info("Base URL: https://apps.qualiadept.eu/hapifyme/");
         logger.info("========================================");
     }
 

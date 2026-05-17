@@ -31,7 +31,7 @@ public class ThreadSafeTest extends BaseTest {
 
         given()
                 .header("Authorization", "Bearer " + currentToken) // Folosim token-ul corect
-                .baseUri("https://test.hapifyme.com/api")
+                .baseUri("https://apps.qualiadept.eu/hapifyme/api")
                 .when()
                 .get("/user/get_profile.php")
                 .then()

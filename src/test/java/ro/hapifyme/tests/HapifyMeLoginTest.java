@@ -32,7 +32,7 @@ public class HapifyMeLoginTest extends BaseTest {
     // {0} și {1} sunt înlocuite cu valorile parametrilor (username, password)
     @Step("Trimite cerere POST login pentru user: {0} și parola: {1}")
     public Response performLogin(String user, String pass) {
-        String endpoint = "https://test.hapifyme.com/api/user/login.php";
+        String endpoint = "https://apps.qualiadept.eu/hapifyme/api/user/login.php";
         String payload = "{\"username\": \"" + user + "\", \"password\": \"" + pass + "\"}";
 
         // Logăm și pentru debug (vezi Cap 1)

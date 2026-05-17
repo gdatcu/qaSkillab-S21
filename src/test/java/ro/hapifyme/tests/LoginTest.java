@@ -9,7 +9,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLoginWithLog4j() {
-        String endpoint = "https://test.hapifyme.com/api/user/login.php";
+        String endpoint = "https://apps.qualiadept.eu/hapifyme/api/user/login.php";
         String payload = "{\"username\": \"john1765654889247_doe1765654889247\", \"password\": \"5Wp}px<8xUyS\"}";
 
         logger.info("Pas 1: Pregătire request către endpoint-ul: " + endpoint);
