@@ -12,7 +12,7 @@ stages:
   - test
   - report
 
-# JOB 1: Testare_
+# JOB 1: Testare__
 run_tests:
   stage: test
   tags:
